@@ -4,6 +4,10 @@ from rest_framework.response import Response
 import os
 import subprocess
 
+@api_view(['GET'])
+def home_page(request):
+    return HttpResponse("hii siddharth sharma")
+
 
 def run_java(code):
     # f = open("Main.java", "a")
